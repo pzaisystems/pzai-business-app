@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#b8654d" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="/style.css" />
+  <title>Update hours &middot; PZAI Business</title>
+</head>
+<body>
+  <main class="stub-page">
+    <a class="back-link" href="/">&larr; Back</a>
+    <h1>Update hours</h1>
+    <p>Change today's hours, set a one-time exception, or update the regular weekly schedule.</p>
+
+    <form onsubmit="event.preventDefault(); alert('Phase 2 — wires to backend.');">
+      <div class="form-group">
+        <label for="hours-day">Day</label>
+        <select id="hours-day">
+          <option>Today only (one-time)</option>
+          <option>Monday</option>
+          <option>Tuesday</option>
+          <option>Wednesday</option>
+          <option>Thursday</option>
+          <option>Friday</option>
+          <option>Saturday</option>
+          <option>Sunday</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="hours-open">Opens</label>
+        <input id="hours-open" type="time" />
+      </div>
+      <div class="form-group">
+        <label for="hours-close">Closes</label>
+        <input id="hours-close" type="time" />
+      </div>
+      <div class="form-group">
+        <label for="hours-note">Note (optional)</label>
+        <input id="hours-note" type="text" placeholder="Closed for private event" />
+      </div>
+      <button class="btn-primary" type="submit">Save hours update</button>
+    </form>
+  </main>
+</body>
+</html>

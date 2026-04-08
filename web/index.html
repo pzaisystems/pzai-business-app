@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#b8654d" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="PZAI" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+  <link rel="stylesheet" href="/style.css" />
+  <title>PZAI Business</title>
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <span class="brand-mark">PZAI</span>
+      <span class="brand-sub">Business</span>
+    </div>
+    <button class="icon-btn" aria-label="Settings">&#9881;</button>
+  </header>
+
+  <main class="app-main">
+    <!-- Freshness traffic light + label -->
+    <section class="freshness-card" aria-live="polite">
+      <div class="freshness-row">
+        <span class="freshness-dot freshness-dot--green" id="freshnessDot" aria-hidden="true"></span>
+        <div class="freshness-text">
+          <div class="freshness-label">Today's freshness</div>
+          <div class="freshness-detail" id="freshnessDetail">All items refreshed within 24 hours</div>
+        </div>
+      </div>
+      <div class="freshness-oldest" id="freshnessOldest">Oldest item: today's special &middot; 7:30 a.m.</div>
+    </section>
+
+    <!-- The killer button -->
+    <button id="everythingGoodBtn" class="big-button big-button--primary">
+      <span class="big-button__check">&#10003;</span>
+      <span class="big-button__label">Everything's Good</span>
+      <span class="big-button__sub">Refresh every freshness stamp now</span>
+    </button>
+
+    <!-- Quick actions -->
+    <section class="quick-actions">
+      <h2 class="section-title">Quick actions</h2>
+      <div class="action-grid">
+        <a class="action-tile" href="/pages/menu.html">
+          <span class="action-icon">&#127869;</span>
+          <span class="action-label">Update menu</span>
+        </a>
+        <a class="action-tile" href="/pages/hours.html">
+          <span class="action-icon">&#128344;</span>
+          <span class="action-label">Update hours</span>
+        </a>
+        <button class="action-tile" id="eightySixBtn">
+          <span class="action-icon">&#10060;</span>
+          <span class="action-label">86 a dish</span>
+        </button>
+        <a class="action-tile" href="/pages/traffic.html">
+          <span class="action-icon">&#128202;</span>
+          <span class="action-label">Today's traffic</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Status badges -->
+    <section class="status-row">
+      <div class="status-badge status-badge--ok">
+        <span class="status-badge__icon">&#10003;</span>
+        <span class="status-badge__text">Google AI Overview ready</span>
+      </div>
+      <div class="status-badge">
+        <span class="status-badge__icon">&#129302;</span>
+        <span class="status-badge__text">12 AI agents queried today</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <div>v0.1.0 &middot; scaffold</div>
+    <div>Powered by PZAI</div>
+  </footer>
+
+  <!-- Toast for confirmations -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

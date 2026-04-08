@@ -1,0 +1,43 @@
+{
+  "name": "PZAI Business",
+  "short_name": "PZAI",
+  "description": "Manage your PZAI-powered website from your phone. One tap keeps your site fresh.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#b8654d",
+  "background_color": "#ffffff",
+  "categories": ["business", "productivity"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Everything's Good",
+      "short_name": "All Good",
+      "description": "One-tap review-pass to refresh every freshness stamp",
+      "url": "/?action=review-pass",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "86 a dish",
+      "short_name": "86",
+      "url": "/?action=eighty-six",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

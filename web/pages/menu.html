@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#b8654d" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="/style.css" />
+  <title>Update menu &middot; PZAI Business</title>
+</head>
+<body>
+  <main class="stub-page">
+    <a class="back-link" href="/">&larr; Back</a>
+    <h1>Update menu</h1>
+    <p>Add, remove, or 86 a menu item. The change writes to your canonical JSON state and re-stamps the item's freshness timestamp automatically.</p>
+
+    <form onsubmit="event.preventDefault(); alert('Phase 2 — wires to backend.');">
+      <div class="form-group">
+        <label for="item-name">Item name</label>
+        <input id="item-name" type="text" placeholder="Osso Buco" />
+      </div>
+      <div class="form-group">
+        <label for="item-price">Price</label>
+        <input id="item-price" type="text" inputmode="decimal" placeholder="$32" />
+      </div>
+      <div class="form-group">
+        <label for="item-desc">Description</label>
+        <textarea id="item-desc" placeholder="Slow-braised veal shank with saffron risotto"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="item-section">Section</label>
+        <select id="item-section">
+          <option>Today's specials</option>
+          <option>Antipasti</option>
+          <option>Pasta</option>
+          <option>Mains</option>
+          <option>Dessert</option>
+        </select>
+      </div>
+      <button class="btn-primary" type="submit">Save menu update</button>
+    </form>
+  </main>
+</body>
+</html>
